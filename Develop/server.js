@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const db = require("./db/db.json");
-const { v4: uuid } = require('uuid');
+const { v4: uuid } = require("uuid");
 
 const PORT = 3001;
 
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  console.log("Test String!");
+  res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 app.get("/notes", (req, res) => {
@@ -27,11 +27,11 @@ app.get("/api/notes", (req, res) => {
 
 // Save a new note
 app.post("/api/notes", (req, res) => {
-    const newNote = {
-        id: uuid(),
-        title: req.body.title,
-        text: req.body.text,
-      };
+  const newNote = {
+    id: uuid(),
+    title: req.body.title,
+    text: req.body.text,
+  };
   db.push(newNote);
 
   // Write the updated data back to db.json
