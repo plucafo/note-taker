@@ -12,10 +12,6 @@ app.use(express.static("./Develop/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
-});
-
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 });
