@@ -39,4 +39,4 @@ To install and run the Note Taker App locally, follow these steps:
 2. Navigate to the project directory in your terminal.
 3. Run `npm install` to install the project dependencies.
 4. Run `npm start` to start the server.
-5. Open your web browser and navigate to `http://localhost:3000` to use the app.
+5. Open your web browser and navigate to `http://localhost:3001` to use the app.
