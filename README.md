@@ -2,6 +2,8 @@
 
 The Note Taker App is a simple web application that allows users to write, save, and delete notes. It provides an easy way to keep track of important information or tasks.
 
+[Live Demo](https://phil-note-taker-6cb70dad840e.herokuapp.com/)
+
 ## Features
 
 - **Create Notes**: Users can create new notes by entering a title and text content for the note.
