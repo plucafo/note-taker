@@ -4,7 +4,7 @@ const fs = require("fs");
 const db = require("./Develop/db/db.json");
 const { v4: uuid } = require("uuid");
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
